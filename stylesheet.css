@@ -1,13 +1,14 @@
 .first-cont{
     background-color: #1F2937;
-    height: 500px;
+    height: 700px;
     width: 100%;
     display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
 }
 
 .header{
     display: flex;
-    flex: 1;
     height: 100px;
     width: 100%;
     color: white;
@@ -17,11 +18,11 @@
 }
 
 
-.header #container-right{
+#container-right{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+    gap: 100px;
     width: 650px;
-    flex: 1 1 auto;
     font-size: 18px;
 }
 
@@ -29,7 +30,28 @@
     display: flex;
     justify-content: center;
     width: 600px;
-    flex: 1 2 auto;
     font-size: 32px;
     font-weight: bold;
+}
+
+#container-right > div, #container-left > div{
+    cursor: pointer;
+}
+
+.Main{
+    display: flex;
+    justify-content: space-evenly;
+    flex: auto;
+}
+
+#Left{
+    display: flex;
+    width: 50%;
+
+}
+
+#Right{
+    display: flex;
+    width: 50%;
+
 }
