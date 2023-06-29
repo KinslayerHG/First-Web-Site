@@ -2,24 +2,34 @@
     background-color: #1F2937;
     height: 500px;
     width: 100%;
-}
-.top-container {
     display: flex;
-    margin: 0%;
+}
+
+.header{
+    display: flex;
+    flex: 1;
     height: 100px;
-    padding: 30px;
-}
-
-.top-container > div{
-
-    width: auto;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    font-size: 24px;
+    width: 100%;
     color: white;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-*{
+
+.header #container-right{
+    display: flex;
+    justify-content: space-evenly;
+    width: 650px;
+    flex: 1 1 auto;
+    font-size: 18px;
+}
+
+#container-left{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    flex: 1 2 auto;
+    font-size: 32px;
     font-weight: bold;
 }
